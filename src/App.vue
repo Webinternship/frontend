@@ -4,7 +4,6 @@
   <!-- <taskManagerC/> -->
   <BLatestJobC />
   <BfooterC />
-
 </template>
 
 <script>
