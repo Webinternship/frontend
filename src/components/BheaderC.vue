@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-gray-200 p-3 flex items-center">
+  <div class="bg-gray-200 p-3 flex items-center fixed w-full z-10 top-0 left-0">
     <div class="ml-16">
       <img src="./Icons/graduate.svg" alt="" class="w-16" />
     </div>

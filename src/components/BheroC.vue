@@ -1,5 +1,5 @@
 <template>
-  <div class="flex h-72 justify-content items-center">
+  <div class="flex h-72 justify-content items-center mt-32">
     <lottie-player
       src="./programmingBoy.json"
       background="transparent"

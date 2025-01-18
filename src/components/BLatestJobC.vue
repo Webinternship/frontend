@@ -7,7 +7,8 @@
       :style="{ animationDelay: `${wordIndex * 0.25}s` }"
     >
       <BgridsC>
-        <div>
+        <template #title>
+          <div>
           <h2
             :style="{
               backgroundColor: currentBgcolor,
@@ -20,6 +21,8 @@
           </h2>
           <p class="break-words whitespace-normal">{{ descriptions[wordIndex] }}</p>
         </div>
+        </template>
+
       </BgridsC>
     </span>
   </div>

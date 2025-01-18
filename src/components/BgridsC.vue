@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="bg-gray-200 rounded p-4 text-center w-full h-full flex flex-col ">
-      <slot></slot>
+      <slot name="title"></slot>
       <div class="grid grid-cols-3 gap-2 text-sm">
         <div :class="infoStyle">
           <img src="./Icons/calendar.svg" alt="" class="w-4 h-4" />
