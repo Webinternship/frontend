@@ -4,10 +4,12 @@
       <img src="./Icons/graduate.svg" alt="" class="w-16" />
     </div>
     <div class="pl-64 items-center">
-      <button class="flex items-center gap-2">
-        <img src="./Icons/home-icon.svg" alt="home" class="w-8" />
-        <h2>home</h2>
-      </button>
+      <router-link to="/">
+
+        <button class="flex items-center gap-2">
+          <img src="./Icons/home-icon.svg" alt="home" class="w-6" />
+        </button>
+      </router-link >
     </div>
     <div class="ml-20 flex gap-4">
       <h2 class="font-bold">course management</h2>
@@ -18,9 +20,13 @@
       <button class="">log in</button>
       <button>sign up</button>
     </div>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-export default {}
+import { RouterLink, RouterView } from 'vue-router';
+export default {
+components: {RouterLink, RouterView}
+}
 </script>
