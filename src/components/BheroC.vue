@@ -9,7 +9,7 @@
       class="w-7/12"
     ></lottie-player>
     <div class="w-6/12 mt-24 ml-auto pr-16">
-      <h2 class="font-bold text-4xl">
+      <h2 class="font-bold text-xl">
         we devote to create <span class="text-purple-600">proficient</span> and
         <span class="text-purple-600">remarkable</span> computer science students.
       </h2>
@@ -21,7 +21,7 @@
   </div>
   <div class="flex h-72 justify-content items-center mt-16">
     <div class="mt-24 pr-32 w-128 ml-16">
-      <h2 class="font-bold text-4xl">
+      <h2 class="font-bold text-xl">
         learn <span class="text-purple-600">debugging ( ፀረ ሓሰኻ)</span>
       </h2>
     </div>
@@ -46,7 +46,7 @@
       class="w-7/12"
     ></lottie-player>
     <div class="w-6/12 mt-24 ml-auto pr-32 w-16">
-      <h2 class="font-bold text-4xl">
+      <h2 class="font-bold text-xl">
         make <span class="text-purple-600">privacy</span> and
         <span class="text-purple-600">security</span> the essence of software development
       </h2>
