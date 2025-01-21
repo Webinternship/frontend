@@ -9,20 +9,19 @@
       <BgridsC>
         <template #title>
           <div>
-          <h2
-            :style="{
-              backgroundColor: currentBgcolor,
-              color: currentColor,
-              padding: '10px',
-              border: '2px ',
-            }"
-          >
-            {{ text }}
-          </h2>
-          <p class="break-words whitespace-normal">{{ descriptions[wordIndex] }}</p>
-        </div>
+            <h2
+              :style="{
+                backgroundColor: currentBgcolor,
+                color: currentColor,
+                padding: '10px',
+                border: '2px ',
+              }"
+            >
+              {{ text }}
+            </h2>
+            <p class="break-words whitespace-normal">{{ descriptions[wordIndex] }}</p>
+          </div>
         </template>
-
       </BgridsC>
     </span>
   </div>
@@ -43,6 +42,8 @@ export default {
         'networking',
       ],
       descriptions: [
+        'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur iste nobis vero, facilis assumenda recusandae vel. Deleniti fuga beatae provident suscipit omnis quibusdam molestiae accusantium harum magni ducimus. Fugiat, hic!',
+        'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur iste nobis vero, facilis assumenda recusandae vel. Deleniti fuga beatae provident suscipit omnis quibusdam molestiae accusantium harum magni ducimus. Fugiat, hic!',
         'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur iste nobis vero, facilis assumenda recusandae vel. Deleniti fuga beatae provident suscipit omnis quibusdam molestiae accusantium harum magni ducimus. Fugiat, hic!',
         'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur iste nobis vero, facilis assumenda recusandae vel. Deleniti fuga beatae provident suscipit omnis quibusdam molestiae accusantium harum magni ducimus. Fugiat, hic!',
         'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur iste nobis vero, facilis assumenda recusandae vel. Deleniti fuga beatae provident suscipit omnis quibusdam molestiae accusantium harum magni ducimus. Fugiat, hic!',

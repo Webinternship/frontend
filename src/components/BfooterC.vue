@@ -1,7 +1,7 @@
 <template>
   <footer class="bg-black text-white p-8">
     <div class="flex items-center justify-center space-x-24">
-      <img src="./Icons/settings1.svg" alt="sheqlee icon for upwork" class="h-16" />
+      <img src="./" alt="Passion Academy" class="h-16" />
       <div v-for="section in footerSections" :key="section.id">
         <h2 class="underline underline-offset-8 font-bold mb-4">{{ section.title }}</h2>
         <ul>
@@ -33,23 +33,19 @@ export default {
       footerSections: [
         {
           title: 'Links',
-          links: ['Companies', 'Categories', 'Tags'],
+          links: ['About', 'related', 'Learn More'],
           id: 1,
         },
-        {
-          title: 'Company',
-          links: ['About', 'Blog', 'Pricing'],
-          id: 2,
-        },
+
         {
           title: 'Support',
           links: ['Getting Started', 'Contact', 'FAQ'],
-          id: 3,
+          id: 2,
         },
         {
           title: 'Legal',
           links: ['Privacy Policy', 'Terms and Conditions', 'Cookie Policy'],
-          id: 4,
+          id: 3,
         },
       ],
       socialIcons: [
