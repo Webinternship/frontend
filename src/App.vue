@@ -1,20 +1,17 @@
 <template>
   <BheaderC />
-  <div >
-    <BheroC />
-  <BLatestJobC />
+  <BheroC />
+  <LatestCourses />
   <BfooterC />
-  <BsearchMenu />
-  </div>
 </template>
 
 <script>
+import BfooterC from './components/BfooterC.vue'
 import BheaderC from './components/BheaderC.vue'
 import BheroC from './components/BheroC.vue'
-import BLatestJobC from './components/BLatestJobC.vue'
-import BfooterC from './components/BfooterC.vue'
-import BsearchMenu from './components/BsearchMenu.vue'
+import LatestCourses from './components/LatestCourses.vue'
+
 export default {
-  components: { BheaderC, BheroC, BfooterC, BLatestJobC, BsearchMenu },
+  components: { BheaderC, BheroC, LatestCourses, BfooterC },
 }
 </script>
