@@ -13,10 +13,5 @@ import LatestCourses from './components/LatestCourses.vue'
 
 export default {
   components: { BheaderC, BheroC, LatestCourses, BfooterC },
-  data(){
-    return {
-      greeting: 'hello world'
-    }
-  }
 }
 </script>
