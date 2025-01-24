@@ -3,7 +3,6 @@
   <BheroC />
   <LatestCourses />
   <BfooterC />
-  {{greeting}}
 </template>
 
 <script>
@@ -14,8 +13,5 @@ import LatestCourses from './components/LatestCourses.vue'
 
 export default {
   components: { BheaderC, BheroC, LatestCourses, BfooterC },
-  data(){
-    greeting: 'hi world'
-  }
 }
 </script>
