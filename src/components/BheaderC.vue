@@ -1,5 +1,4 @@
 <template>
-
   <div
     class="flex items-center justify-center bg-gradient-to-r from-blue-200 to-purple-300 text-sm p-4"
   >
@@ -25,8 +24,7 @@
       </button>
     </div>
   </div>
-
-  </template>
+</template>
 
 <script>
 import BsearchBar from './BsearchBar.vue'
@@ -59,8 +57,4 @@ export default {
     opacity: 0;
   }
 }
-
-
-
-
 </style>

@@ -7,6 +7,7 @@
         <div :class="Style"><img src="./Icons/company.svg" alt="" />?</div>
         <div :class="Style"><img src="./Icons/clock.svg" alt="" />length</div>
         <div :class="Style"><img src="./Icons/calendar.svg" alt="" />times ago</div>
+        <button :class="Style" class="justify-center bg--500">learn now</button>
       </div>
     </div>
   </div>
@@ -17,7 +18,7 @@ export default {
   props: {},
   data() {
     return {
-      Style: 'bg-gray-300 rounded p-1 flex items-center gap-2 mt-4',
+      Style: 'bg-gray-300 rounded p-1 flex  gap-2 mt-4',
     }
   },
 }
