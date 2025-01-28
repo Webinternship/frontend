@@ -1,3 +1,4 @@
+<!-- eslint-disable vue/multi-word-component-names -->
 <template>
   <div class="relative">
     <input
@@ -5,11 +6,11 @@
       v-model="searchQuery"
       @input="handleSearch"
       placeholder="Search courses..."
-      class="w-80 border border-gray-300 rounded-lg p-2 focus:ring-2 focus:ring-blue-500 outline-none"
+      class="w-80 rounded-lg p-2 focus:ring-2 focus:ring-blue-500 outline-none"
     />
     <ul
       v-if="showResults && filteredItems.length"
-      class="absolute bg-white border border-gray-300 rounded-lg w-full mt-1 shadow-lg z-10"
+      class="absolute bg-white rounded-lg w-full mt-1 shadow-lg z-10"
     >
       <li
         v-for="(item, index) in filteredItems"
@@ -62,7 +63,3 @@ export default {
   },
 }
 </script>
-
-<style scoped>
-/* Add any custom styles if needed */
-</style>

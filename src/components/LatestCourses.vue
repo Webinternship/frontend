@@ -1,11 +1,6 @@
 <template>
   <div class="text-sm grid grid-cols-3 gap-2 p-4 items-center" :key="colorKey">
-    <span
-      v-for="(text, wordIndex) in texts"
-      :key="wordIndex"
-      class="animate-fade-in"
-      :style="{ animationDelay: `${wordIndex * 0.25}s` }"
-    >
+    <span v-for="(course, wordIndex) in courses" :key="wordIndex">
       <BgridsC>
         <template #title>
           <div>
@@ -14,10 +9,11 @@
                 backgroundColor: currentBgcolor,
                 color: currentColor,
                 padding: '10px',
-                border: '2px ',
               }"
             >
-              {{ text }}
+              <span class="animate-fade-in" :style="{ animationDelay: `${wordIndex * 0.25}s` }">
+                {{ course }}
+              </span>
             </h2>
             <p class="break-words whitespace-normal">{{ descriptions[wordIndex] }}</p>
           </div>
@@ -26,21 +22,14 @@
     </span>
   </div>
 </template>
+
 <script>
-import BgridsC from '../components/BgridsC.vue'
+import BgridsC from './Atoms/grids.vue'
 
 export default {
   components: { BgridsC },
   data() {
     return {
-      texts: [
-        'programming',
-        'debugging',
-        'cybersecurity',
-        'artificial intelligence',
-        'data structure and algorithms',
-        'networking',
-      ],
       descriptions: [
         'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur iste nobis vero, facilis assumenda recusandae vel. Deleniti fuga beatae provident suscipit omnis quibusdam molestiae accusantium harum magni ducimus. Fugiat, hic!',
         'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur iste nobis vero, facilis assumenda recusandae vel. Deleniti fuga beatae provident suscipit omnis quibusdam molestiae accusantium harum magni ducimus. Fugiat, hic!',
@@ -55,10 +44,10 @@ export default {
       BgcolorIndex: 0,
     }
   },
+  props: {
+    courses: Array,
+  },
   computed: {
-    splitTexts() {
-      return this.texts.map((text) => text.split(' '))
-    },
     currentColor() {
       return this.colors[this.colorIndex]
     },
@@ -67,9 +56,6 @@ export default {
     },
     colorKey() {
       return `${this.colorIndex}`
-    },
-    BgcolorKey() {
-      return `${this.BgcolorIndex}`
     },
   },
   watch: {
@@ -98,6 +84,7 @@ export default {
   },
 }
 </script>
+
 <style>
 @keyframes fade-in {
   0% {
@@ -112,6 +99,4 @@ export default {
   animation: fade-in 0.5s ease-in-out forwards;
   opacity: 0;
 }
-
-/* Apply animation delay to each word */
 </style>

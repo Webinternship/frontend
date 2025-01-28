@@ -1,3 +1,4 @@
+<!-- eslint-disable vue/multi-word-component-names -->
 <template>
   <div
     class="flex items-center justify-center bg-gradient-to-r from-blue-200 to-purple-300 text-sm p-4"
@@ -15,7 +16,7 @@
 
     <div class="flex items-center gap-2 sm:gap-4 pr-16">
       <button class="border border-blue-500 px-2 rounded-md sm:text-base p-1">log in</button>
-      <button class="relative p-2 bg-blue-400 text-white rounded-md hover:bg-blue-800">
+      <button class="relative p-2 bg-blue-400 text-white rounded-md hover:bg-blue-600">
         <span>sign up</span>
         <span
           class="absolute inset-0 bg-blue-700 rounded-md"
@@ -27,7 +28,7 @@
 </template>
 
 <script>
-import BsearchBar from './BsearchBar.vue'
+import BsearchBar from './Atoms/search.vue'
 
 export default {
   components: {
@@ -35,7 +36,7 @@ export default {
   },
   data() {
     return {
-      courses: [],
+      courses: ['introduction to python'],
     }
   },
   methods: {

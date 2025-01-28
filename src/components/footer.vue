@@ -1,3 +1,4 @@
+<!-- eslint-disable vue/multi-word-component-names -->
 <template>
   <footer class="bg-black text-white p-8">
     <div class="flex items-center justify-center space-x-24">
