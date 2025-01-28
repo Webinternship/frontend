@@ -1,5 +1,5 @@
 <template>
-  <div class="text-sm grid grid-cols-3 gap-2 p-4 items-center" :key="colorKey">
+  <div class="text-sm grid grid-cols-3 gap-16 justify-center p-8 h-screen" :key="colorKey">
     <span v-for="(course, wordIndex) in courses" :key="wordIndex">
       <BgridsC>
         <template #title>
@@ -24,7 +24,7 @@
 </template>
 
 <script>
-import BgridsC from './Atoms/grids.vue'
+import BgridsC from '@/components/Atoms/grids.vue'
 
 export default {
   components: { BgridsC },
@@ -42,11 +42,10 @@ export default {
       Bgcolors: ['lightblue', 'green'], // Array of colors
       colorIndex: 0,
       BgcolorIndex: 0,
+      courses: ['python', 'javascript', 'newtworking'],
     }
   },
-  props: {
-    courses: Array,
-  },
+
   computed: {
     currentColor() {
       return this.colors[this.colorIndex]

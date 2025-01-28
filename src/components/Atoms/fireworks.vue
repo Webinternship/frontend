@@ -118,7 +118,7 @@ export default {
 
     function setSize(canvas) {
       const dpr = window.devicePixelRatio || 1
-      const heightRatio = 0.8 // Use 70% of the window height (adjust as needed)
+      const heightRatio = 0.5 // Use 70% of the window height (adjust as needed)
       canvas.width = window.innerWidth * dpr
       canvas.height = window.innerHeight * heightRatio * dpr
       canvas.style.width = `${window.innerWidth}px`

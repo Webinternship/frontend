@@ -6,12 +6,12 @@
     </svg>
 
     <section class="flex items-center justify-center">
-      <h2 class="text-center">hellohellohellohellohellohellohellohello</h2>
-      <div class="w-72 flex">
+      <h2 class="text-center">{{ networking }}</h2>
+      <div class="w-72 flex gap-32">
         <lottie-player src="./cyber.json" speed="1" autoplay loop></lottie-player>
         <lottie-player src="./machine-learning.json" speed="1" autoplay loop></lottie-player>
       </div>
-      <p class="text-center">hellohellohellohellohellohellohellohellohellohellohello</p>
+      <p class="text-center">{{ networking }}</p>
     </section>
 
     <svg viewBox="0 0 1440 200" class="fill-light-gray">
@@ -21,10 +21,9 @@
     </svg>
 
     <section class="bg-gray-300 flex items-center justify-center">
-      <p class="text-center">hellohellohellohellohellohellohellohellohellohellohello</p>
+      <p class="text-center">{{ networking }}</p>
       <div class="w-72">
         <lottie-player src="./machine-learning.json" speed="1" autoplay loop></lottie-player>
-
       </div>
     </section>
 
@@ -36,7 +35,17 @@
       <div class="w-72">
         <lottie-player src="./debugging.json" speed="1" autoplay loop></lottie-player>
       </div>
-      <p class="text-center">hellohellohellohellohellohellohellohellohellohello</p>
+      <p class="text-center">{{ networking }}</p>
     </section>
   </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      networking: 'hello',
+    }
+  },
+}
+</script>

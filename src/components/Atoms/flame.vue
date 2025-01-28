@@ -1,7 +1,7 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
-  <div class=" ml-1 mr-1">
-    <div class="ml-2 pt-16">
+  <div class="ml-1 mr-1">
+    <div class="ml-2.5 pt-16">
       <div
         class="-ml-[5px] w-[20px] h-[50px] rounded-[50%_50%_35%_35%] bg-gradient-to-t from-[lightblue] via-[yellow] to-white shadow-[0_0_25px_5px_orange] origin-bottom animate-glowNshrink"
       ></div>
