@@ -1,33 +1,29 @@
 <template>
-  <div class="text-sm grid grid-cols-3 gap-16 justify-center p-8 h-screen" :key="colorKey">
+  <div class="grid grid-cols-3 gap-8 p-2 h-screen" :key="colorKey">
     <span v-for="(course, wordIndex) in courses" :key="wordIndex">
-      <BgridsC>
-        <template #title>
-          <div>
-            <h2
-              :style="{
-                backgroundColor: currentBgcolor,
-                color: currentColor,
-                padding: '10px',
-              }"
-            >
-              <span class="animate-fade-in" :style="{ animationDelay: `${wordIndex * 0.25}s` }">
-                {{ course }}
-              </span>
-            </h2>
-            <p class="break-words whitespace-normal">{{ descriptions[wordIndex] }}</p>
-          </div>
-        </template>
-      </BgridsC>
+      <course>
+        <h2
+          :style="{
+            backgroundColor: currentBgcolor,
+            color: currentColor,
+            padding: '10px',
+            animationDelay: `${wordIndex * 0.25}s`,
+          }"
+          class="animate-fade-in"
+        >
+          {{ course }}
+        </h2>``
+        <!-- <p class="break-words whitespace-normal">{{ descriptions[wordIndex] }}</p> -->
+      </course>
     </span>
   </div>
 </template>
 
 <script>
-import BgridsC from '@/components/Atoms/grids.vue'
+import course from '@/components/Atoms/course.vue'
 
 export default {
-  components: { BgridsC },
+  components: { course },
   data() {
     return {
       descriptions: [

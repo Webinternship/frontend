@@ -9,11 +9,9 @@
     />
     <p>birhan academy</p>
     <div class="hidden sm:flex items-center space-x-4">
-      <router-link to="/"><button class="flex items-center gap-2 ml-16">home</button></router-link>
-      <router-link to="/LatestCourses"
-        ><button class="flex items-center gap-2">Latest Courses</button></router-link
-      >
-      <a href="#" class="p-2 rounded bg-gray-300">course management</a>
+      <router-link to="/"><button class="flex items-c enter gap-2 ml-16">home</button></router-link>
+      <router-link to="/LatestCourses">Latest Courses</router-link>
+      <!-- <router-link to="/tasks">tasks</router-link> -->
     </div>
 
     <div class="mx-4">
@@ -21,7 +19,7 @@
     </div>
 
     <div class="flex items-center gap-2 sm:gap-4 pr-16">
-      <button class="border border-blue-400 px-1 rounded-md sm:text-base p-1">log in</button>
+      <!-- <router-link to="/Login" class="border border-gray-900 p-2 rounded">log in</router-link> -->
       <button class="relative p-2 bg-blue-400 text-white rounded-md hover:bg-blue-600">
         <span>sign up</span>
         <span
