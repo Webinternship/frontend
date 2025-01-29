@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-black ">
+  <div class="bg-black">
     <Hero />
     <Sections />
   </div>

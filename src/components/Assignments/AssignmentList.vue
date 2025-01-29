@@ -1,5 +1,5 @@
 <template>
-  <section v-if="assignments.length" class="bg-gray-500 p-4 w-64">
+  <section v-if="assignments.length" class="w-full md:w-1/4 bg-gray-400  shadow-md overflow-y-auto">
     <h2 class="font-bold">{{ title }}</h2>
 
     <div class="flex gap-2">
@@ -17,7 +17,7 @@
         <li
           v-for="assignment in filteredAssignments"
           :key="assignment.id"
-          class="flex items-center justify-between"
+          class="flex items-center justify-center gap-6 pt-2"
         >
           {{ assignment.name }}
           <input type="checkbox" v-model="assignment.complete" />

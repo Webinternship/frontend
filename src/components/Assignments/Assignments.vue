@@ -1,24 +1,212 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
-  <div class="flex gap-16">
-    <AssignmentListC :assignments="inProgress" title="in progress" />
-    <AssignmentListC :assignments="completed" title="completed" />
-    <aAssignmentCreate @add="add" class="mt-2 "/>
+  <div class="flex flex-col md:flex-row h-screen">
+    <assignmentList :assignments="inProgress" />
+
+    <div class="w-full md:w-1/2 bg-gray-100  shadow-md overflow-y-auto">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate placeat molestiae voluptas
+      facilis quaerat, cumque delectus vel earum labore quas praesentium, architecto assumenda
+      itaque recusandae repellendus nulla est quo possimus? Lorem ipsum dolor sit amet consectetur
+      adipisicing elit. Voluptate placeat molestiae voluptas facilis quaerat, cumque delectus vel
+      earum labore quas praesentium, architecto assumenda itaque recusandae repellendus nulla est
+      quo possimus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate placeat
+      molestiae voluptas facilis quaerat, cumque delectus vel earum labore quas praesentium,
+      architecto assumenda itaque recusandae repellendus nulla est quo possimus? Lorem ipsum dolor
+      sit amet consectetur adipisicing elit. Voluptate placeat molestiae voluptas facilis quaerat,
+      cumque delectus vel earum labore quas praesentium, architecto assumenda itaque recusandae
+      repellendus nulla est quo possimus? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Voluptate placeat molestiae voluptas facilis quaerat, cumque delectus vel earum labore quas
+      praesentium, architecto assumenda itaque recusandae repellendus nulla est quo possimus? Lorem
+      ipsum dolor sit amet consectetur adipisicing elit. Voluptate placeat molestiae voluptas
+      facilis quaerat, cumque delectus vel earum labore quas praesentium, architecto assumenda
+      itaque recusandae repellendus nulla est quo possimus? Lorem ipsum dolor sit amet consectetur
+      adipisicing elit. Voluptate placeat molestiae voluptas facilis quaerat, cumque delectus vel
+      earum labore quas praesentium, architecto assumenda itaque recusandae repellendus nulla est
+      quo possimus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate placeat
+      molestiae voluptas facilis quaerat, cumque delectus vel earum labore quas praesentium,
+      architecto assumenda itaque recusandae repellendus nulla est quo possimus? Lorem ipsum dolor
+      sit amet consectetur adipisicing elit. Voluptate placeat molestiae voluptas facilis quaerat,
+      cumque delectus vel earum labore quas praesentium, architecto assumenda itaque recusandae
+      repellendus nulla est quo possimus? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Voluptate placeat molestiae voluptas facilis quaerat, cumque delectus vel earum labore quas
+      praesentium, architecto assumenda itaque recusandae repellendus nulla est quo possimus? Lorem
+      ipsum dolor sit amet consectetur adipisicing elit. Voluptate placeat molestiae voluptas
+      facilis quaerat, cumque delectus vel earum labore quas praesentium, architecto assumenda
+      itaque recusandae repellendus nulla est quo possimus? Lorem ipsum dolor sit amet consectetur
+      adipisicing elit. Voluptate placeat molestiae voluptas facilis quaerat, cumque delectus vel
+      earum labore quas praesentium, architecto assumenda itaque recusandae repellendus nulla est
+      quo possimus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate placeat
+      molestiae voluptas facilis quaerat, cumque delectus vel earum labore quas praesentium,
+      architecto assumenda itaque recusandae repellendus nulla est quo possimus? Lorem ipsum dolor
+      sit amet consectetur adipisicing elit. Voluptate placeat molestiae voluptas facilis quaerat,
+      cumque delectus vel earum labore quas praesentium, architecto assumenda itaque recusandae
+      repellendus nulla est quo possimus? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Voluptate placeat molestiae voluptas facilis quaerat, cumque delectus vel earum labore quas
+      praesentium, architecto assumenda itaque recusandae repellendus nulla est quo possimus? Lorem
+      ipsum dolor sit amet consectetur adipisicing elit. Voluptate placeat molestiae voluptas
+      facilis quaerat, cumque delectus vel earum labore quas praesentium, architecto assumenda
+      itaque recusandae repellendus nulla est quo possimus? Lorem ipsum dolor sit amet consectetur
+      adipisicing elit. Voluptate placeat molestiae voluptas facilis quaerat, cumque delectus vel
+      earum labore quas praesentium, architecto assumenda itaque recusandae repellendus nulla est
+      quo possimus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate placeat
+      molestiae voluptas facilis quaerat, cumque delectus vel earum labore quas praesentium,
+      architecto assumenda itaque recusandae repellendus nulla est quo possimus? Lorem ipsum dolor
+      sit amet consectetur adipisicing elit. Voluptate placeat molestiae voluptas facilis quaerat,
+      cumque delectus vel earum labore quas praesentium, architecto assumenda itaque recusandae
+      repellendus nulla est quo possimus? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Voluptate placeat molestiae voluptas facilis quaerat, cumque delectus vel earum labore quas
+      praesentium, architecto assumenda itaque recusandae repellendus nulla est quo possimus? Lorem
+      ipsum dolor sit amet consectetur adipisicing elit. Voluptate placeat molestiae voluptas
+      facilis quaerat, cumque delectus vel earum labore quas praesentium, architecto assumenda
+      itaque recusandae repellendus nulla est quo possimus? Lorem ipsum dolor sit amet consectetur
+      adipisicing elit. Voluptate placeat molestiae voluptas facilis quaerat, cumque delectus vel
+      earum labore quas praesentium, architecto assumenda itaque recusandae repellendus nulla est
+      quo possimus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate placeat
+      molestiae voluptas facilis quaerat, cumque delectus vel earum labore quas praesentium,
+      architecto assumenda itaque recusandae repellendus nulla est quo possimus? Lorem ipsum dolor
+      sit amet consectetur adipisicing elit. Voluptate placeat molestiae voluptas facilis quaerat,
+      cumque delectus vel earum labore quas praesentium, architecto assumenda itaque recusandae
+      repellendus nulla est quo possimus? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Voluptate placeat molestiae voluptas facilis quaerat, cumque delectus vel earum labore quas
+      praesentium, architecto assumenda itaque recusandae repellendus nulla est quo possimus? Lorem
+      ipsum dolor sit amet consectetur adipisicing elit. Voluptate placeat molestiae voluptas
+      facilis quaerat, cumque delectus vel earum labore quas praesentium, architecto assumenda
+      itaque recusandae repellendus nulla est quo possimus? Lorem ipsum dolor sit amet consectetur
+      adipisicing elit. Voluptate placeat molestiae voluptas facilis quaerat, cumque delectus vel
+      earum labore quas praesentium, architecto assumenda itaque recusandae repellendus nulla est
+      quo possimus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate placeat
+      molestiae voluptas facilis quaerat, cumque delectus vel earum labore quas praesentium,
+      architecto assumenda itaque recusandae repellendus nulla est quo possimus? Lorem ipsum dolor
+      sit amet consectetur adipisicing elit. Voluptate placeat molestiae voluptas facilis quaerat,
+      cumque delectus vel earum labore quas praesentium, architecto assumenda itaque recusandae
+      repellendus nulla est quo possimus? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Voluptate placeat molestiae voluptas facilis quaerat, cumque delectus vel earum labore quas
+      praesentium, architecto assumenda itaque recusandae repellendus nulla est quo possimus? Lorem
+      ipsum dolor sit amet consectetur adipisicing elit. Voluptate placeat molestiae voluptas
+      facilis quaerat, cumque delectus vel earum labore quas praesentium, architecto assumenda
+      itaque recusandae repellendus nulla est quo possimus? Lorem ipsum dolor sit amet consectetur
+      adipisicing elit. Voluptate placeat molestiae voluptas facilis quaerat, cumque delectus vel
+      earum labore quas praesentium, architecto assumenda itaque recusandae repellendus nulla est
+      quo possimus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate placeat
+      molestiae voluptas facilis quaerat, cumque delectus vel earum labore quas praesentium,
+      architecto assumenda itaque recusandae repellendus nulla est quo possimus? Lorem ipsum dolor
+      sit amet consectetur adipisicing elit. Voluptate placeat molestiae voluptas facilis quaerat,
+      cumque delectus vel earum labore quas praesentium, architecto assumenda itaque recusandae
+      repellendus nulla est quo possimus? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Voluptate placeat molestiae voluptas facilis quaerat, cumque delectus vel earum labore quas
+      praesentium, architecto assumenda itaque recusandae repellendus nulla est quo possimus? Lorem
+      ipsum dolor sit amet consectetur adipisicing elit. Voluptate placeat molestiae voluptas
+      facilis quaerat, cumque delectus vel earum labore quas praesentium, architecto assumenda
+      itaque recusandae repellendus nulla est quo possimus? Lorem ipsum dolor sit amet consectetur
+      adipisicing elit. Voluptate placeat molestiae voluptas facilis quaerat, cumque delectus vel
+      earum labore quas praesentium, architecto assumenda itaque recusandae repellendus nulla est
+      quo possimus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate placeat
+      molestiae voluptas facilis quaerat, cumque delectus vel earum labore quas praesentium,
+      architecto assumenda itaque recusandae repellendus nulla est quo possimus? Lorem ipsum dolor
+      sit amet consectetur adipisicing elit. Voluptate placeat molestiae voluptas facilis quaerat,
+      cumque delectus vel earum labore quas praesentium, architecto assumenda itaque recusandae
+      repellendus nulla est quo possimus? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Voluptate placeat molestiae voluptas facilis quaerat, cumque delectus vel earum labore quas
+      praesentium, architecto assumenda itaque recusandae repellendus nulla est quo possimus? Lorem
+      ipsum dolor sit amet consectetur adipisicing elit. Voluptate placeat molestiae voluptas
+      facilis quaerat, cumque delectus vel earum labore quas praesentium, architecto assumenda
+      itaque recusandae repellendus nulla est quo possimus? Lorem ipsum dolor sit amet consectetur
+      adipisicing elit. Voluptate placeat molestiae voluptas facilis quaerat, cumque delectus vel
+      earum labore quas praesentium, architecto assumenda itaque recusandae repellendus nulla est
+      quo possimus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate placeat
+      molestiae voluptas facilis quaerat, cumque delectus vel earum labore quas praesentium,
+      architecto assumenda itaque recusandae repellendus nulla est quo possimus? Lorem ipsum dolor
+      sit amet consectetur adipisicing elit. Voluptate placeat molestiae voluptas facilis quaerat,
+      cumque delectus vel earum labore quas praesentium, architecto assumenda itaque recusandae
+      repellendus nulla est quo possimus? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Voluptate placeat molestiae voluptas facilis quaerat, cumque delectus vel earum labore quas
+      praesentium, architecto assumenda itaque recusandae repellendus nulla est quo possimus? Lorem
+      ipsum dolor sit amet consectetur adipisicing elit. Voluptate placeat molestiae voluptas
+      facilis quaerat, cumque delectus vel earum labore quas praesentium, architecto assumenda
+      itaque recusandae repellendus nulla est quo possimus? Lorem ipsum dolor sit amet consectetur
+      adipisicing elit. Voluptate placeat molestiae voluptas facilis quaerat, cumque delectus vel
+      earum labore quas praesentium, architecto assumenda itaque recusandae repellendus nulla est
+      quo possimus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate placeat
+      molestiae voluptas facilis quaerat, cumque delectus vel earum labore quas praesentium,
+      architecto assumenda itaque recusandae repellendus nulla est quo possimus? Lorem ipsum dolor
+      sit amet consectetur adipisicing elit. Voluptate placeat molestiae voluptas facilis quaerat,
+      cumque delectus vel earum labore quas praesentium, architecto assumenda itaque recusandae
+      repellendus nulla est quo possimus? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Voluptate placeat molestiae voluptas facilis quaerat, cumque delectus vel earum labore quas
+      praesentium, architecto assumenda itaque recusandae repellendus nulla est quo possimus? Lorem
+      ipsum dolor sit amet consectetur adipisicing elit. Voluptate placeat molestiae voluptas
+      facilis quaerat, cumque delectus vel earum labore quas praesentium, architecto assumenda
+      itaque recusandae repellendus nulla est quo possimus? Lorem ipsum dolor sit amet consectetur
+      adipisicing elit. Voluptate placeat molestiae voluptas facilis quaerat, cumque delectus vel
+      earum labore quas praesentium, architecto assumenda itaque recusandae repellendus nulla est
+      quo possimus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate placeat
+      molestiae voluptas facilis quaerat, cumque delectus vel earum labore quas praesentium,
+      architecto assumenda itaque recusandae repellendus nulla est quo possimus? Lorem ipsum dolor
+      sit amet consectetur adipisicing elit. Voluptate placeat molestiae voluptas facilis quaerat,
+      cumque delectus vel earum labore quas praesentium, architecto assumenda itaque recusandae
+      repellendus nulla est quo possimus? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Voluptate placeat molestiae voluptas facilis quaerat, cumque delectus vel earum labore quas
+      praesentium, architecto assumenda itaque recusandae repellendus nulla est quo possimus? Lorem
+      ipsum dolor sit amet consectetur adipisicing elit. Voluptate placeat molestiae voluptas
+      facilis quaerat, cumque delectus vel earum labore quas praesentium, architecto assumenda
+      itaque recusandae repellendus nulla est quo possimus? Lorem ipsum dolor sit amet consectetur
+      adipisicing elit. Voluptate placeat molestiae voluptas facilis quaerat, cumque delectus vel
+      earum labore quas praesentium, architecto assumenda itaque recusandae repellendus nulla est
+      quo possimus?
+    </div>
+
+    <assignmentList :assignments="completed" />
   </div>
 </template>
 
 <script>
-import aAssignmentCreate from './AssignmentCreate.vue'
-import AssignmentListC from './AssignmentList.vue'
+// import aAssignmentCreate from './AssignmentCreate.vue'
+import assignmentList from './AssignmentList.vue'
 
 export default {
-  components: { AssignmentListC, aAssignmentCreate },
+  components: { assignmentList },
   data() {
     return {
       assignments: [
         { name: 'assignment one', complete: false, id: 1, tag: 'science' },
-        { name: 'assignment two', complete: false, id: 2, tag: 'math' },
-        { name: 'assignment three', complete: false, id: 3, tag: 'science' },
+        { name: 'assignment one', complete: false, id: 1, tag: 'science' },
+        { name: 'assignment one', complete: false, id: 1, tag: 'science' },
+        { name: 'assignment one', complete: false, id: 1, tag: 'science' },
+        { name: 'assignment one', complete: false, id: 1, tag: 'science' },
+        { name: 'assignment one', complete: false, id: 1, tag: 'science' },
+        { name: 'assignment one', complete: false, id: 1, tag: 'science' },
+        { name: 'assignment one', complete: false, id: 1, tag: 'science' },
+        { name: 'assignment one', complete: false, id: 1, tag: 'science' },
+        { name: 'assignment one', complete: false, id: 1, tag: 'science' },
+        { name: 'assignment one', complete: false, id: 1, tag: 'science' },
+        { name: 'assignment one', complete: false, id: 1, tag: 'science' },
+        { name: 'assignment one', complete: false, id: 1, tag: 'science' },
+        { name: 'assignment one', complete: false, id: 1, tag: 'science' },
+        { name: 'assignment one', complete: false, id: 1, tag: 'science' },
+        { name: 'assignment one', complete: false, id: 1, tag: 'science' },
+        { name: 'assignment one', complete: false, id: 1, tag: 'science' },
+        { name: 'assignment one', complete: false, id: 1, tag: 'science' },
+        { name: 'assignment one', complete: false, id: 1, tag: 'science' },
+        { name: 'assignment one', complete: false, id: 1, tag: 'science' },
+        { name: 'assignment one', complete: false, id: 1, tag: 'science' },
+        { name: 'assignment one', complete: false, id: 1, tag: 'science' },
+        { name: 'assignment one', complete: false, id: 1, tag: 'science' },
+        { name: 'assignment one', complete: false, id: 1, tag: 'science' },
+        { name: 'assignment one', complete: false, id: 1, tag: 'science' },
+        { name: 'assignment one', complete: false, id: 1, tag: 'science' },
+        { name: 'assignment one', complete: false, id: 1, tag: 'science' },
+        { name: 'assignment one', complete: false, id: 1, tag: 'science' },
+        { name: 'assignment one', complete: false, id: 1, tag: 'science' },
+        { name: 'assignment one', complete: false, id: 1, tag: 'science' },
+        { name: 'assignment one', complete: false, id: 1, tag: 'science' },
+        { name: 'assignment one', complete: false, id: 1, tag: 'science' },
+        { name: 'assignment one', complete: false, id: 1, tag: 'science' },
+        { name: 'assignment one', complete: false, id: 1, tag: 'science' },
+        { name: 'assignment one', complete: false, id: 1, tag: 'science' },
+        { name: 'assignment one', complete: false, id: 1, tag: 'science' },
+        { name: 'assignment one', complete: false, id: 1, tag: 'science' },
+        { name: 'assignment one', complete: false, id: 1, tag: 'science' },
+        { name: 'assignment one', complete: false, id: 1, tag: 'science' },
       ],
     }
   },
@@ -31,14 +219,14 @@ export default {
     },
   },
 
-  methods: {
-    add(name) {
-      this.assignments.push({
-        name: name,
-        complete: false,
-        id: this.assignments.length + 1,
-      })
-    },
-  },
+  // methods: {
+  //   add(name) {
+  //     this.assignments.push({
+  //       name: name,
+  //       complete: false,
+  //       id: this.assignments.length + 1,
+  //     })
+  //   },
+  // },
 }
 </script>
