@@ -14,8 +14,8 @@
           {{ course }}
         </h2>
         <template #calendar>{{calendar[wordIndex]}}</template>
-        <template #instructure>{{calendar[wordIndex]}}</template>
-        <!-- <p class="break-words whitespace-normal">{{ descriptions[wordIndex] }}</p> -->
+        <template #instructor>{{instructor[wordIndex]}}</template>
+        <p class="break-words whitespace-normal">{{ descriptions[wordIndex] }}</p>
       </course>
     </span>
   </div>
@@ -28,6 +28,8 @@ export default {
   components: { course },
   data() {
     return {
+      calendar: ['30min', '1hour', '30days'],
+      instructor: ['30min', '1hour', '30days'],
       descriptions: [
         'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur iste nobis vero, facilis assumenda recusandae vel. Deleniti fuga beatae provident suscipit omnis quibusdam molestiae accusantium harum magni ducimus. Fugiat, hic!',
         'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur iste nobis vero, facilis assumenda recusandae vel. Deleniti fuga beatae provident suscipit omnis quibusdam molestiae accusantium harum magni ducimus. Fugiat, hic!',
@@ -41,7 +43,6 @@ export default {
       colorIndex: 0,
       BgcolorIndex: 0,
       courses: ['python', 'javascript', 'newtworking'],
-      calendar: ['30min', '1hour', '30days'],
     }
   },
 

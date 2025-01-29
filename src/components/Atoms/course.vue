@@ -1,7 +1,7 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
   <div
-    class="text-sm rounded p-4 text-center shadow-inner"
+    class="text-sm rounded p-4 text-center"
     style="background: url(https://i.ibb.co/qCkd9jS/img1.jpg)"
   >
     <slot></slot>

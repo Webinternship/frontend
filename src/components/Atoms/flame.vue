@@ -18,7 +18,7 @@
 <style>
 @keyframes glowNshrink {
   20% {
-    transform: scaleY(1.1) rotateZ(10deg);
+    transform: scaleY(1.1) rotateZ(15deg);
   }
   40% {
     transform: scaleY(1.2) rotateZ(10deg);
