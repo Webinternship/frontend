@@ -3,16 +3,18 @@
     <span v-for="(course, wordIndex) in courses" :key="wordIndex">
       <course>
         <h2
-          :style="{
-            backgroundColor: currentBgcolor,
-            color: currentColor,
-            padding: '10px',
-            animationDelay: `${wordIndex * 0.25}s`,
-          }"
+        :style="{
+          backgroundColor: currentBgcolor,
+          color: currentColor,
+          padding: '10px',
+          animationDelay: `${wordIndex * 0.25}s`,
+        }"
           class="animate-fade-in"
-        >
+          >
           {{ course }}
-        </h2>``
+        </h2>
+        <template #calendar>{{calendar[wordIndex]}}</template>
+        <template #instructure>{{calendar[wordIndex]}}</template>
         <!-- <p class="break-words whitespace-normal">{{ descriptions[wordIndex] }}</p> -->
       </course>
     </span>
@@ -39,6 +41,7 @@ export default {
       colorIndex: 0,
       BgcolorIndex: 0,
       courses: ['python', 'javascript', 'newtworking'],
+      calendar: ['30min', '1hour', '30days'],
     }
   },
 
