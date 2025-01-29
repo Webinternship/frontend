@@ -11,6 +11,7 @@
     <div class="hidden sm:flex items-center space-x-4">
       <router-link to="/"><button class="flex items-c enter gap-2 ml-16">home</button></router-link>
       <router-link to="/LatestCourses" class="bg-amber-200 p-1 rounded">Latest Courses</router-link>
+      <!-- <router-link to="/LatestCourses" class="bg-amber-200 p-1 rounded">course management</router-link> -->
       <!-- <router-link to="/tasks">tasks</router-link> -->
     </div>
 
@@ -71,5 +72,3 @@ export default {
   }
 }
 </style>
-
-
