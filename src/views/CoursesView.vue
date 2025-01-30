@@ -1,21 +1,20 @@
 <template>
   <div class="grid grid-cols-3 gap-8 p-2 h-screen" :key="colorKey">
-    <span v-for="(course, wordIndex) in courses" :key="wordIndex">
+    <span v-for="(course, courseIndex) in courses" :key="courseIndex">
       <course>
         <h2
-        :style="{
-          backgroundColor: currentBgcolor,
-          color: currentColor,
-          padding: '10px',
-          animationDelay: `${wordIndex * 0.25}s`,
-        }"
-          class="animate-fade-in"
-          >
+          :style="{
+            backgroundColor: currentBgcolor,
+            color: currentColor,
+            animationDelay: `${courseIndex * 0.25}s`,
+          }"
+          class="animate-fade-in p-1"
+        >
           {{ course }}
         </h2>
-        <template #calendar>{{calendar[wordIndex]}}</template>
-        <template #instructor>{{instructor[wordIndex]}}</template>
-        <p class="break-words whitespace-normal">{{ descriptions[wordIndex] }}</p>
+        <template #calendar>{{ calendar[courseIndex] }}</template>
+        <template #instructor>{{ instructor[courseIndex] }}</template>
+        <p class="break-words whitespace-normal">{{ descriptions[courseIndex] }}</p>
       </course>
     </span>
   </div>
@@ -30,14 +29,7 @@ export default {
     return {
       calendar: ['30min', '1hour', '30days'],
       instructor: ['30min', '1hour', '30days'],
-      descriptions: [
-        'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur iste nobis vero, facilis assumenda recusandae vel. Deleniti fuga beatae provident suscipit omnis quibusdam molestiae accusantium harum magni ducimus. Fugiat, hic!',
-        'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur iste nobis vero, facilis assumenda recusandae vel. Deleniti fuga beatae provident suscipit omnis quibusdam molestiae accusantium harum magni ducimus. Fugiat, hic!',
-        'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur iste nobis vero, facilis assumenda recusandae vel. Deleniti fuga beatae provident suscipit omnis quibusdam molestiae accusantium harum magni ducimus. Fugiat, hic!',
-        'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur iste nobis vero, facilis assumenda recusandae vel. Deleniti fuga beatae provident suscipit omnis quibusdam molestiae accusantium harum magni ducimus. Fugiat, hic!',
-        'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur iste nobis vero, facilis assumenda recusandae vel. Deleniti fuga beatae provident suscipit omnis quibusdam molestiae accusantium harum magni ducimus. Fugiat, hic!',
-        'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur iste nobis vero, facilis assumenda recusandae vel. Deleniti fuga beatae provident suscipit omnis quibusdam molestiae accusantium harum magni ducimus. Fugiat, hic!',
-      ],
+      descriptions: ['lorem epsum', 'lorem epsum', 'lorem epsum', 'lorem epsum'],
       colors: ['purple', 'white'], // Array of colors
       Bgcolors: ['lightblue', 'green'], // Array of colors
       colorIndex: 0,

@@ -64,17 +64,6 @@ export default {
 }
 </script>
 <style>
-/* General Styles */
-
-.gradient-text {
-  background-image: linear-gradient(to right, #a855f7, #ec4899);
-}
-.fill-black path {
-  fill: black;
-}
-.fill-light-gray path {
-  fill: lightgray;
-}
 
 /* Animations */
 @keyframes slideIn {
